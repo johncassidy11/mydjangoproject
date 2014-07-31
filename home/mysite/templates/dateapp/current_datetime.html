@@ -1,0 +1,19 @@
+<html>
+<head>
+
+
+<style>
+p{
+	color:red
+}
+</style>
+</head>
+<body>
+{% extends 'D:/mydjangoproject/home/mysite/templates/dateapp/base.html' %}
+
+{% block title %}Текущее время{% endblock%}
+{% block content %}
+<p>Сейчас {{ current_date }}</p>
+{% endblock%}
+</body>
+</html>

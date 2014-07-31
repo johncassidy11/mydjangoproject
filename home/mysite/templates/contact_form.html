@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact us</title>
+
+<style>
+p{
+	color: #fb61ff
+}
+li{
+    list-style: none;
+
+}
+</style>
+</head>
+<body>
+    <h1>Contact us</h1>
+
+    {% if form.errors %}
+       <p>Change next errors {{form.errors}}</p>
+
+   {% endif %}
+    <form action="" method="post">
+      <table>
+          {{ form.as_table }}
+          <input type="submit" value="Send">
+      </table>
+    </form>
+
+
+</body>
+</html>

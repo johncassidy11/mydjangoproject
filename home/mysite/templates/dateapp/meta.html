@@ -1,0 +1,27 @@
+<html>
+<head>
+
+
+<style>
+p{
+	color:red
+}
+</style>
+</head>
+<body>
+{% extends 'D:/mydjangoproject/home/mysite/templates/dateapp/base.html' %}
+
+{% block title %}Текущее время{% endblock%}
+{% block content %}
+
+<table>
+     {% for k,v in values %}
+    <tr>
+        <td>{{k}}</td><td>{{v}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock%}
+</body>
+</html>

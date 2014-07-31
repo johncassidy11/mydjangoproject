@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search</title>
+
+<style>
+p{
+	color: rgba(4, 1, 2, 0.78)
+}
+</style>
+</head>
+<body>
+    <p>You are intrested in <strong>{{query}}<strong></p>
+
+    {% if books %}
+        <p>We finded {{books|length}} book {{books|pluralize}}</p>
+
+        <ul>
+            {%for book in books %}
+                <li>{{book.title}}</li>
+
+            {% endfor %}
+
+        </ul>
+    {% else %}
+        <p>we cant find books you are looking for </p>
+    {% endif %}
+
+</body>
+</html>
